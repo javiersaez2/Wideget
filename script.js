@@ -155,10 +155,21 @@ $(document).ready(function () {
 
 
 const buttons = Array.from(document.querySelectorAll("button"));
-
+sonando = true
+var music = new Audio('http://playerservices.streamtheworld.com/api/livestream-redirect/LOS40.mp3');
 buttons.forEach(btn => {
   btn.addEventListener("click", () => {
+    console.log(sonando)
+    if (sonando){
     btn.classList.toggle("active");
+    music.play();
+    sonando=false
+    }
+    else{
+      btn.classList.toggle("active");
+      music.pause();
+      sonando=true
+    }
   });
 });
 
