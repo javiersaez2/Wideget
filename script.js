@@ -62,21 +62,21 @@ function tiempo(datos2) {
 
 
   //Funcion hora
-  console.log(Dato + "Numero 1")
-  hora = null;
+  // console.log(Dato + "Numero 1")
+  hora = "";
   hora = datosseparados[1].split([":"])
   if (Dato == "1") {
     Dato = "1";
     // alert("Nulo")
-    console.log(Dato + "Numero if")
+    // console.log(Dato + "Numero if")
     clearInterval(refreshId);
 
   }
   else {
     Dato = "1";
-    console.log(Dato + "Numero else")
+    // console.log(Dato + "Numero else")
     var refreshId = setInterval(function () {
-      refreshId = window.setInterval(1000);
+      // refreshId = window.setInterval(1000);
       if (parseInt(hora[2]) == 59) {
         if (hora[1].length == 1) {
           hora[1] = parseInt(hora[1]) + 1;
@@ -125,17 +125,22 @@ $(document).ready(function () {
        
     // }
     // else {
-      // var data = { 'name': document.querySelectorAll('.stations__station__track a')[0].getAttribute("href") };
+      var data = { 'cambiocancion': 'no' };
+      cancicamb="si"
       // console.log(data);
       fetch(url, {
         method: 'POST', // or 'POST'
-        // body: JSON.stringify(data), // data can be `string` or {object}!
+        body: JSON.stringify(data), // data can be `string` or {object}!
         headers: { 'Content-Type': 'application/json' }  // input data
       })
         .then(res => res.json()).then(result => {
           document.getElementById("cancion22").innerHTML=result.cancion
-          document.getElementById("fotocancion").innerHTML = result.imagen
-
+          if(cancicamb=="si"){
+              document.getElementById("fotocancion").innerHTML = result.imagen
+          }
+          else{
+         
+          }
           console.log((result))
         })
     // }
