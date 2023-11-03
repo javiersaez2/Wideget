@@ -137,7 +137,7 @@ body {
             }
             .ajax{
                 z-index: 9;
-                padding-top:50px ;
+                width: 100;
                 text-decoration: none;
                 color: white;
                font-size:18px; 
@@ -147,7 +147,6 @@ body {
              display: flex;
                 justify-content: center;
                 flex-direction: column;
-
 
             }
         }
@@ -257,3 +256,74 @@ button {
 			}
 		}
 	}}
+
+
+
+
+
+
+
+
+
+
+
+    //Texto radio
+.textoradio {
+    animation-name: somename;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: left;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  
+  
+  }
+  .artistatextoradio {
+    animation-name: somename;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: left;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  
+  
+  }
+  .color{
+    height:20px;
+    width:250px;
+    // border-bottom: 1px solid white;
+      overflow:hidden;
+      overflow:hidden;
+      padding-top:10px ;
+
+  }
+  
+  @keyframes somename {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.33%);
+    }
+  } 
+   @keyframes asomename {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
+  #letra{
+    // padding: 100px;
+    // margin: 100px;
+   }

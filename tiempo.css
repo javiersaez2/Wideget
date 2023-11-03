@@ -112,7 +112,7 @@ body {
 }
 .section .tarjeta .tipografia .ajax {
   z-index: 9;
-  padding-top: 50px;
+  width: 100;
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -203,4 +203,53 @@ button:focus {
 .container .btn.play-pause .icon.pause {
   opacity: 0;
   transform: translate(-50%, 50%);
+}
+
+.textoradio {
+  animation-name: somename;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  float: left;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.artistatextoradio {
+  animation-name: somename;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  float: left;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.color {
+  height: 20px;
+  width: 250px;
+  overflow: hidden;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+@keyframes somename {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+@keyframes asomename {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=tiempo.css.map */
